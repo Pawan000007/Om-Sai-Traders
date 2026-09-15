@@ -774,3 +774,21 @@ function scrollToProducts() {
 displayProducts(products);
 
 updateCart();
+/* =========================================
+   OPEN WHATSAPP
+========================================= */
+
+function openWhatsApp() {
+
+    const message =
+        "Hello Om Sai Traders 👋\n\n" +
+        "I would like to know more about your products.";
+
+    const url =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        encodeURIComponent(message);
+
+    window.open(url, "_blank");
+}
